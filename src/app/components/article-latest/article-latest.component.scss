@@ -1,4 +1,8 @@
-:host {
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.articles {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

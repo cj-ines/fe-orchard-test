@@ -1,8 +1,8 @@
+<h1>All the latest from AEG</h1>
+<div class="articles">
 <ng-container *ngFor="let article of articles">
-    <ui-article-preview 
-        [imageSrc]="article.imageSrc"
-        [title]="article.title"
-        [content]="article.content">
+    <ui-article-preview [article]="article">
     </ui-article-preview>
 </ng-container>
+</div>
 

@@ -2,8 +2,9 @@
     overflow: hidden;
 }
 img {
-    object-fit: scale-down;
-    height: 340px;
+    object-fit: cover;
+    max-height: 340px;
+    width: 100%;
     border-bottom: 3pt solid red;
 }
 
@@ -11,6 +12,8 @@ h1 {
     font-size: 13pt;
 }
 
+
 a {
-    color: red
+    color: red;
+    text-transform: uppercase;
 }

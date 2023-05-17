@@ -34,6 +34,10 @@ h3 {
 }
 
 main {
-   max-width: 1200px;
-   margin: auto; 
+    padding-top: 150px;
+    max-width: 1200px;
+    margin: auto; 
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
 }
