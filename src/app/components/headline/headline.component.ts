@@ -8,4 +8,9 @@ import { Component } from "@angular/core";
 
 export class HeadlineComponent {
 
+    modal: string|null = null;
+
+    showModal(src: string) {
+        this.modal = src;
+    }
 }

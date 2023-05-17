@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 :host {
     overflow: hidden;
 }
@@ -5,15 +7,14 @@ img {
     object-fit: cover;
     max-height: 340px;
     width: 100%;
-    border-bottom: 3pt solid red;
+    border-bottom: 3pt solid $accent-color;
 }
 
 h1 {
     font-size: 13pt;
 }
 
-
 a {
-    color: red;
+    color: $accent-color;
     text-transform: uppercase;
 }

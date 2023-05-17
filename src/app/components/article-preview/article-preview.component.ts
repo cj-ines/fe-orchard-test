@@ -9,7 +9,7 @@ import { Article } from "src/app/models/article.model";
 export class ArticlePreviewComponent {
     @Input() article?: Article;
 
-    handleClick(article: Article) {
-        console.log('click', article)
+    handleClick(event: any) {
+        console.log('click', event)
     }
 }

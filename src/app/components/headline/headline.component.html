@@ -1,8 +1,9 @@
 <div class="headline-grid">
-    <img class="image-primary" src="/assets/component-01/Image-01.jpg">
+    <img (click)="showModal('/assets/component-01/Image-01@2x.jpg')" 
+        class="image-primary" src="/assets/component-01/Image-01.jpg">
     <div class="images">
-        <img src="/assets/component-01/Image-02.jpg">
-        <img src="/assets/component-01/Image-03.jpg">
+        <img (click)="showModal('/assets/component-01/Image-02@2x.jpg')" src="/assets/component-01/Image-02.jpg">
+        <img (click)="showModal('/assets/component-01/Image-03@2x.jpg')" src="/assets/component-01/Image-03.jpg">
     </div>
     <section>
         <h1>Answer your body's needs</h1>
@@ -14,4 +15,9 @@
             Sourcing local or organice food is agood way to start being more mindful about what you're cooking and eating.
         </strong>
     </section>
+</div>
+
+<div class="modal" *ngIf="modal" (click)="modal = null">
+    <button (click)="modal = null">&times;</button>
+    <img [src]="modal" class="no-effect">
 </div>

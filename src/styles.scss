@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$background-color: #0e1414;
-$text-color: #999a9a;
-$heading-color: #fff;
-$accent-color: #cf1430;
+@import "./variables.scss";
 
 @font-face {
     font-family: OpenSans;
@@ -26,6 +23,8 @@ body {
 
 h1,h2 {
     color: $heading-color;
+    font-family: OpenSansLight;
+    font-weight: normal;
 }
 
 h3 {
@@ -34,6 +33,7 @@ h3 {
 }
 
 main {
+    padding: 24px;
     padding-top: 150px;
     max-width: 1200px;
     margin: auto; 
@@ -41,3 +41,12 @@ main {
     gap: 120px;
     flex-direction: column;
 }
+
+img {
+    transition: 100ms;
+
+    &:not(.no-effect):hover {
+        transform: scale(1.03);
+    }
+}
+

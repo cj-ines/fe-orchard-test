@@ -18,7 +18,7 @@ p {
     display: grid;
     justify-items: stretch;
     gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     
     img {
         width: 100%;
@@ -34,3 +34,46 @@ p {
     }
 }
 
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    padding: 24px;
+
+    img {
+        height: 100%;
+        object-fit: scale-down;
+    }
+
+    button {
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 23px;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        line-height: 28px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .headline-grid section {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .headline-grid section {
+        grid-column: initial
+    }
+}
