@@ -1,17 +1,27 @@
+@import '/src/variables.scss';
 
 h1 {
     text-transform: uppercase;
     border-bottom: 1pt solid #fff;
     font-weight: 500;
-    line-height: 60px;
     margin-bottom: 20px;
+    font-size: 20pt;
+    padding-top: 0px;
+    margin: 0;
+    margin-bottom: 24px;
+    padding-bottom: 15px;
 }
 
 p {
     margin-bottom: 2.5em;
     line-height: 20pt;
-    font-size: 13pt;
+    font-size: 14pt;
     font-family: OpenSansLight, sans-serif;
+}
+
+strong {
+    line-height: 28px;
+    color: #fff;
 }
 
 .headline-grid {
@@ -43,19 +53,24 @@ p {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.9);
-    padding: 24px;
+    padding: 120px 24px ;
+
+    .modal-container {
+        max-width: 1200px;
+        position: relative;
+        padding: 24px;
+    }
 
     img {
         height: 100%;
-        object-fit: scale-down;
+        width: 100%;
+        object-fit: contain;
     }
 
     button {
         position: absolute;
-        right: 24px;
-        top: 24px;
-        background: none;
-        border: 2px solid #fff;
+        right: 12px;
+        top: 12px;
         color: #fff;
         font-size: 23px;
         border-radius: 50%;
@@ -63,6 +78,12 @@ p {
         height: 32px;
         line-height: 28px;
         cursor: pointer;
+        border: 2px solid #fff;
+        background: none;
+        transition: 100ms;
+        &:hover {
+            background: #000;
+        } 
     }
 }
 
@@ -75,5 +96,15 @@ p {
 @media only screen and (max-width: 690px) {
     .headline-grid section {
         grid-column: initial
+    }
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

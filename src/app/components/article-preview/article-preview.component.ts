@@ -8,8 +8,4 @@ import { Article } from "src/app/models/article.model";
 })
 export class ArticlePreviewComponent {
     @Input() article?: Article;
-
-    handleClick(event: any) {
-        console.log('click', event)
-    }
 }

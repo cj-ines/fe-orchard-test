@@ -11,7 +11,8 @@ export class ArticleLatestComponent {
     articles: Article[] = [
         { 
             stub: 'summer-lunch-menu',
-            imageSrc: '/assets/component-02/Image-01@2x.jpg',
+            imageSrc: '/assets/component-02/Image-01.jpg',
+            imageSrcSet: '/assets/component-02/Image-01@2x.jpg x2',
             title: 'Summer Lunch Menu',
             content: "AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.",
             link: ''
@@ -19,6 +20,7 @@ export class ArticleLatestComponent {
         { 
             stub: 'a-tradition-christmas',
             imageSrc: '/assets/component-02/Image-02@2x.jpg',
+            imageSrcSet: '/assets/component-02/Image-02@2x.jpg x2',
             title: 'A Traditional Chirstmas Eve, Mark Best Style',
             content: "One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests",
             link: ''
@@ -26,6 +28,7 @@ export class ArticleLatestComponent {
         { 
             stub: 'summer-lunch-menu',
             imageSrc: '/assets/component-02/Image-03@2x.jpg',
+            imageSrcSet: '/assets/component-02/Image-03@2x.jpg x2',
             title: 'Taking Taste Further',
             content: "This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most of our products - and the best out of your food.",
             link: ''
