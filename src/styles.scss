@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+$background-color: #0e1414;
+$text-color: #999a9a;
+$heading-color: #fff;
+$accent-color: #cf1430;
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/assets/OpenSans/OpenSans-Regular.ttf)  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url(/assets/OpenSans/OpenSans-Light.ttf)  format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: OpenSans, sans-serif;
+}
+
+h1,h2 {
+    color: $heading-color;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+main {
+   max-width: 1200px;
+   margin: auto; 
+}
