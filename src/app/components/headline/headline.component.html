@@ -21,7 +21,9 @@
 
 <div class="modal" *ngIf="modal" (click)="modal = null">
     <div class="modal-container">
-        <button (click)="modal = null">&times;</button>
+        <div class="modal-head">
+            <button (click)="modal = null">&times;</button>
+        </div>
         <img [src]="modal" class="no-effect">
     </div>
 </div>

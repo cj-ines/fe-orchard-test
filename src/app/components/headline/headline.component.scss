@@ -53,7 +53,19 @@ strong {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.9);
-    padding: 120px 24px ;
+    padding: 120px 24px;
+
+    .modal-head {
+        background: #282827;
+        display: flex;
+        align-items: center;
+        padding: 14px;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 
     .modal-container {
         max-width: 1200px;
@@ -68,15 +80,14 @@ strong {
     }
 
     button {
-        position: absolute;
-        right: 12px;
-        top: 12px;
         color: #fff;
         font-size: 23px;
         border-radius: 50%;
         width: 32px;
         height: 32px;
-        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         border: 2px solid #fff;
         background: none;
